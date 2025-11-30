@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoList.build/master.swiftdeps"
+  },
+  "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/Sources/TodoList/TodoListView.swift": {
+    "dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoList.build/TodoListView.d",
+    "object": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoList.build/TodoListView.swift.o",
+    "swiftmodule": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoList.build/TodoListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoList.build/TodoListView.swiftdeps",
+    "diagnostics": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoList.build/TodoListView.dia"
+  }
+}

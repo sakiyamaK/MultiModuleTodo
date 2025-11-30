@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/AppFeature.build/master.swiftdeps"
+  },
+  "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/Sources/AppFeature/AppRootView.swift": {
+    "dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/AppFeature.build/AppRootView.d",
+    "object": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/AppFeature.build/AppRootView.swift.o",
+    "swiftmodule": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/AppFeature.build/AppRootView~partial.swiftmodule",
+    "swift-dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/AppFeature.build/AppRootView.swiftdeps",
+    "diagnostics": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/AppFeature.build/AppRootView.dia"
+  }
+}

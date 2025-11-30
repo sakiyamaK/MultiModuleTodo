@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoDetail.build/master.swiftdeps"
+  },
+  "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/Sources/TodoDetail/TodoDetailView.swift": {
+    "dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoDetail.build/TodoDetailView.d",
+    "object": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoDetail.build/TodoDetailView.swift.o",
+    "swiftmodule": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoDetail.build/TodoDetailView~partial.swiftmodule",
+    "swift-dependencies": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoDetail.build/TodoDetailView.swiftdeps",
+    "diagnostics": "/Users/sakiyamak/program/github/ios/002_student_tutorial/MultiModuleTodo/AppPackages/.build/arm64-apple-macosx/debug/TodoDetail.build/TodoDetailView.dia"
+  }
+}

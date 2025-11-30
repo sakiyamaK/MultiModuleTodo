@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Buy Groceries",
+        "isCompleted": false,
+        "descriptionText": "Milk, Eggs, Bread, Cheese"
+    },
+    {
+        "title": "Walk the Dog",
+        "isCompleted": true,
+        "descriptionText": "Go to the park and play fetch"
+    },
+    {
+        "title": "Learn SwiftData",
+        "isCompleted": false,
+        "descriptionText": "Watch WWDC sessions and read documentation"
+    },
+    {
+        "title": "Clean the House",
+        "isCompleted": false,
+        "descriptionText": "Vacuum living room and wash dishes"
+    }
+]
