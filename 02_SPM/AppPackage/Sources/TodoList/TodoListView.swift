@@ -14,6 +14,7 @@ public struct TodoListView: View {
     }
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \Todo.createdAt, order: .reverse) private var todos: [Todo]
+    @State private var hasLoaded = false
 
     // struct自体がpublicになったのでbodyもpublicにする
     public var body: some View {
@@ -51,6 +52,8 @@ public struct TodoListView: View {
             }
         }
         .task {
+            guard !hasLoaded else { return }
+            hasLoaded = true
             try! await client.fetchTodos()
         }
     }

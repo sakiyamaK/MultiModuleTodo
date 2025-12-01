@@ -19,6 +19,7 @@ struct TodoClient: TodoClientProtocol {
         let dotoDTOs = try JSONDecoder().decode([TodoDTO].self, from: data)
 
         Task { @MainActor in
+
             for todo in dotoDTOs.map(\.todo) {
                 TodoModelContainer.shared.container.mainContext.insert(todo)
             }

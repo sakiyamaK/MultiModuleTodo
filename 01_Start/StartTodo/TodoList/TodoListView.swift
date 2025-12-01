@@ -5,6 +5,7 @@ struct TodoListView: View {
     let client: TodoClientProtocol
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \Todo.createdAt, order: .reverse) private var todos: [Todo]
+    @State private var hasLoaded = false
 
     var body: some View {
         List {
@@ -36,6 +37,8 @@ struct TodoListView: View {
             }
         }
         .task {
+            guard !hasLoaded else { return }
+            hasLoaded = true
             try! await client.fetchTodos()
         }
     }

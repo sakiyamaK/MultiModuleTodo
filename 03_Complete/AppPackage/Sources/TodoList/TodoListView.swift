@@ -9,6 +9,7 @@ public struct TodoListView: View {
     @Environment(\.router) private var router
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \Todo.createdAt, order: .reverse) private var todos: [Todo]
+    @State private var hasLoaded = false
 
     public init(client: TodoClient) {
         self.client = client
@@ -44,6 +45,8 @@ public struct TodoListView: View {
             }
         }
         .task {
+            guard !hasLoaded else { return }
+            hasLoaded = true
             try! await client.fetchTodos()
         }
     }
