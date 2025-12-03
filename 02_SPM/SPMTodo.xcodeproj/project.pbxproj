@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B64FB27F2EDC3DDC00E582C9 /* AppRootFeature in Frameworks */ = {isa = PBXBuildFile; productRef = B64FB27E2EDC3DDC00E582C9 /* AppRootFeature */; };
+		B60A646B2EDF0E7900BAD959 /* AppRootFeature in Frameworks */ = {isa = PBXBuildFile; productRef = B60A646A2EDF0E7900BAD959 /* AppRootFeature */; };
+		B60A646D2EDF0E7900BAD959 /* TodoDetail in Frameworks */ = {isa = PBXBuildFile; productRef = B60A646C2EDF0E7900BAD959 /* TodoDetail */; };
+		B60A646F2EDF0E7900BAD959 /* TodoList in Frameworks */ = {isa = PBXBuildFile; productRef = B60A646E2EDF0E7900BAD959 /* TodoList */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B64FB2122EDC39D700E582C9 /* SPMTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B64FB2402EDC3BC000E582C9 /* AppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -28,7 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B64FB27F2EDC3DDC00E582C9 /* AppRootFeature in Frameworks */,
+				B60A646B2EDF0E7900BAD959 /* AppRootFeature in Frameworks */,
+				B60A646D2EDF0E7900BAD959 /* TodoDetail in Frameworks */,
+				B60A646F2EDF0E7900BAD959 /* TodoList in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +41,6 @@
 		B64FB2092EDC39D700E582C9 = {
 			isa = PBXGroup;
 			children = (
-				B64FB2402EDC3BC000E582C9 /* AppPackage */,
 				B64FB2142EDC39D700E582C9 /* SPMTodo */,
 				B64FB27D2EDC3DDC00E582C9 /* Frameworks */,
 				B64FB2132EDC39D700E582C9 /* Products */,
@@ -81,6 +83,9 @@
 			name = SPMTodo;
 			packageProductDependencies = (
 				B64FB27E2EDC3DDC00E582C9 /* AppRootFeature */,
+				B60A646A2EDF0E7900BAD959 /* AppRootFeature */,
+				B60A646C2EDF0E7900BAD959 /* TodoDetail */,
+				B60A646E2EDF0E7900BAD959 /* TodoList */,
 			);
 			productName = SPMTodo;
 			productReference = B64FB2122EDC39D700E582C9 /* SPMTodo.app */;
@@ -110,6 +115,9 @@
 			);
 			mainGroup = B64FB2092EDC39D700E582C9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B60A64692EDF0E7900BAD959 /* XCLocalSwiftPackageReference "AppPackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B64FB2132EDC39D700E582C9 /* Products */;
 			projectDirPath = "";
@@ -362,7 +370,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		B60A64692EDF0E7900BAD959 /* XCLocalSwiftPackageReference "AppPackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AppPackage;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		B60A646A2EDF0E7900BAD959 /* AppRootFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRootFeature;
+		};
+		B60A646C2EDF0E7900BAD959 /* TodoDetail */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoDetail;
+		};
+		B60A646E2EDF0E7900BAD959 /* TodoList */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TodoList;
+		};
 		B64FB27E2EDC3DDC00E582C9 /* AppRootFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRootFeature;

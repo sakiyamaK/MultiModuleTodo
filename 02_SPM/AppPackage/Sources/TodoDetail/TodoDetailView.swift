@@ -2,17 +2,23 @@ import SwiftUI
 // 別モジュールをimportする
 import Model
 
-// 外部モジュールからアクセスできるようにpublicにする
-public struct TodoDetailView: View {
+/*
+ TodoDetailViewをpublicにしていくのがめんどくさいなら
+ 外部モジュールと連携専用の何かを用意してやるといい
+ ただ外部モジュールからはsome ViewであってTodoDetailViewなことは分からなくなる
+ */
+public enum TodoDetailViewBuilder {
+    @MainActor
+    @ViewBuilder
+    public static func build(todo: Todo) -> some View {
+        TodoDetailView(todo: todo)
+    }
+}
+
+struct TodoDetailView: View {
     @Bindable var todo: Todo
 
-    // 外部モジュールからインスタンスを生成できるようにpublicにする
-    public init(todo: Todo) {
-        self.todo = todo
-    }
-    
-    // struct自体がpublicになったのでbodyもpublicにする
-    public var body: some View {
+    var body: some View {
         Form {
             Section(header: Text("Info")) {
                 TextField("Title", text: $todo.title)

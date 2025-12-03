@@ -22,11 +22,11 @@ public struct TodoListView: View {
             ForEach(todos) { todo in
                 NavigationLink {
                     /* *******
-                     TodoDetailViewに依存している！！
-                     もしTodoDetailViewからさらにAView -> BView -> CView
+                     TodoDetailViewのモジュールに依存している！！
+                     もしTodoDetailViewのモジュールからさらにAViewのモジュール -> BViewのモジュール -> CViewのモジュール
                      と遷移が続いたら結局全部のViewに依存するのでモジュールが分離できていない
                      ******* */
-                    TodoDetailView(todo: todo)
+                    TodoDetailViewBuilder.build(todo: todo)
                 } label: {
                     HStack {
                         Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")

@@ -9,9 +9,15 @@ let package = Package(
         .iOS(.v17)
     ],
     products: [
-        .library(name: "AppRootFeature", targets: ["AppRoot"]),
+        .library(
+            name: "AppRootFeature",
+            targets: ["AppRoot"]
+        ),
         .library(name: "TodoList", targets: ["TodoList"]),
         .library(name: "TodoDetail", targets: ["TodoDetail"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/airbnb/lottie-ios", from: "4.5.1"),
     ],
     targets: [
         .target(
@@ -19,7 +25,9 @@ let package = Package(
         ),
         .target(
             name: "Network",
-            dependencies: ["Model"],
+            dependencies: [
+                "Model",
+            ],
             resources: [.process("Resources")]
         ),
         .target(

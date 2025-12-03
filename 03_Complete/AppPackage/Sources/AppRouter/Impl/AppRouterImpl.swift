@@ -13,6 +13,10 @@ public final class AppRouterImpl: AppRouter {
 
     private init() { }
 
+    /*
+     AnyViewにしないとダメ？
+     SwiftUIを実務で使ってないから他に良いやり方があるのか分からない...
+     */
     @ViewBuilder
     public func toDetail(todo: Todo) -> AnyView {
         AnyView(
