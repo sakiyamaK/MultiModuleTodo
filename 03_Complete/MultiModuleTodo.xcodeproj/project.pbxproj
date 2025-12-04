@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B61E80B12EE1783500C1CA35 /* AppRoot in Frameworks */ = {isa = PBXBuildFile; productRef = B61E80B02EE1783500C1CA35 /* AppRoot */; };
+		B61E80B82EE1B08100C1CA35 /* AppRoot in Frameworks */ = {isa = PBXBuildFile; productRef = B61E80B72EE1B08100C1CA35 /* AppRoot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B61E80B12EE1783500C1CA35 /* AppRoot in Frameworks */,
+				B61E80B82EE1B08100C1CA35 /* AppRoot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			);
 			name = MultiModuleTodo;
 			packageProductDependencies = (
-				B61E80B02EE1783500C1CA35 /* AppRoot */,
+				B61E80B72EE1B08100C1CA35 /* AppRoot */,
 			);
 			productName = MultiModuleTodo;
 			productReference = B67C58ED2EDBF8640041687C /* MultiModuleTodo.app */;
@@ -365,7 +365,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B61E80B02EE1783500C1CA35 /* AppRoot */ = {
+		B61E80B72EE1B08100C1CA35 /* AppRoot */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRoot;
 		};
