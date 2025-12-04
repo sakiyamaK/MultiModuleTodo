@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60A646B2EDF0E7900BAD959 /* AppRootFeature in Frameworks */ = {isa = PBXBuildFile; productRef = B60A646A2EDF0E7900BAD959 /* AppRootFeature */; };
-		B60A646D2EDF0E7900BAD959 /* TodoDetail in Frameworks */ = {isa = PBXBuildFile; productRef = B60A646C2EDF0E7900BAD959 /* TodoDetail */; };
-		B60A646F2EDF0E7900BAD959 /* TodoList in Frameworks */ = {isa = PBXBuildFile; productRef = B60A646E2EDF0E7900BAD959 /* TodoList */; };
+		B61E80AA2EE177F300C1CA35 /* AppRoot in Frameworks */ = {isa = PBXBuildFile; productRef = B61E80A92EE177F300C1CA35 /* AppRoot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B61E80A82EE177E100C1CA35 /* AppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppPackage; sourceTree = "<group>"; };
 		B64FB2122EDC39D700E582C9 /* SPMTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -25,13 +24,11 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B64FB20F2EDC39D700E582C9 /* Frameworks */ = {
+		B6AE12332EE173B500BB8B21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60A646B2EDF0E7900BAD959 /* AppRootFeature in Frameworks */,
-				B60A646D2EDF0E7900BAD959 /* TodoDetail in Frameworks */,
-				B60A646F2EDF0E7900BAD959 /* TodoList in Frameworks */,
+				B61E80AA2EE177F300C1CA35 /* AppRoot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,9 +38,10 @@
 		B64FB2092EDC39D700E582C9 = {
 			isa = PBXGroup;
 			children = (
-				B64FB2142EDC39D700E582C9 /* SPMTodo */,
+				B61E80A82EE177E100C1CA35 /* AppPackage */,
 				B64FB27D2EDC3DDC00E582C9 /* Frameworks */,
 				B64FB2132EDC39D700E582C9 /* Products */,
+				B64FB2142EDC39D700E582C9 /* SPMTodo */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,7 +68,7 @@
 			buildConfigurationList = B64FB21F2EDC39D800E582C9 /* Build configuration list for PBXNativeTarget "SPMTodo" */;
 			buildPhases = (
 				B64FB20E2EDC39D700E582C9 /* Sources */,
-				B64FB20F2EDC39D700E582C9 /* Frameworks */,
+				B6AE12332EE173B500BB8B21 /* Frameworks */,
 				B64FB2102EDC39D700E582C9 /* Resources */,
 			);
 			buildRules = (
@@ -82,10 +80,7 @@
 			);
 			name = SPMTodo;
 			packageProductDependencies = (
-				B64FB27E2EDC3DDC00E582C9 /* AppRootFeature */,
-				B60A646A2EDF0E7900BAD959 /* AppRootFeature */,
-				B60A646C2EDF0E7900BAD959 /* TodoDetail */,
-				B60A646E2EDF0E7900BAD959 /* TodoList */,
+				B61E80A92EE177F300C1CA35 /* AppRoot */,
 			);
 			productName = SPMTodo;
 			productReference = B64FB2122EDC39D700E582C9 /* SPMTodo.app */;
@@ -116,7 +111,6 @@
 			mainGroup = B64FB2092EDC39D700E582C9;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B60A64692EDF0E7900BAD959 /* XCLocalSwiftPackageReference "AppPackage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B64FB2132EDC39D700E582C9 /* Products */;
@@ -370,29 +364,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		B60A64692EDF0E7900BAD959 /* XCLocalSwiftPackageReference "AppPackage" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = AppPackage;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		B60A646A2EDF0E7900BAD959 /* AppRootFeature */ = {
+		B61E80A92EE177F300C1CA35 /* AppRoot */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AppRootFeature;
-		};
-		B60A646C2EDF0E7900BAD959 /* TodoDetail */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TodoDetail;
-		};
-		B60A646E2EDF0E7900BAD959 /* TodoList */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TodoList;
-		};
-		B64FB27E2EDC3DDC00E582C9 /* AppRootFeature */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AppRootFeature;
+			productName = AppRoot;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

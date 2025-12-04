@@ -69,7 +69,22 @@ private extension TodoListView {
     }
 }
 
-#Preview {
-    TodoListView(client: TodoClientImpl())
-        .modelContainer(TodoModelContainer.shared.container)
+#if DEBUG
+final class TestRouterImpl: AppRouterProtocol {
+    func toDetail(todo: Model.Todo) -> AnyView {
+        AnyView(Text("Detail"))
+    }
+
+    func toList() -> AnyView {
+        AnyView(Text("List"))
+    }
 }
+
+#Preview {
+    NavigationStack {
+        TodoListView(client: TodoClientImpl())
+            .modelContainer(TodoModelContainer.shared.container)
+            .environment(\.router, TestRouterImpl())
+    }
+}
+#endif

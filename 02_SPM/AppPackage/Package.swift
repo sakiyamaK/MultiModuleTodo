@@ -10,15 +10,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "AppRootFeature",
+            name: "AppRoot",
             targets: ["AppRoot"]
         ),
         .library(name: "TodoList", targets: ["TodoList"]),
         .library(name: "TodoDetail", targets: ["TodoDetail"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-ios", from: "4.5.1"),
-    ],
+//    dependencies: [
+//        .package(url: "https://github.com/airbnb/lottie-ios", from: "4.5.1"),
+//    ],
     targets: [
         .target(
             name: "Model"
@@ -40,7 +40,14 @@ let package = Package(
         ),
         .target(
             name: "AppRoot",
-            dependencies: ["TodoList", "TodoDetail"]
+            dependencies: [
+                "TodoList",
+                "TodoDetail",
+//                .product(
+//                    name: "Lottie",
+//                    package: "Lottie-iOS"
+//                )
+            ]
         ),
     ]
 )

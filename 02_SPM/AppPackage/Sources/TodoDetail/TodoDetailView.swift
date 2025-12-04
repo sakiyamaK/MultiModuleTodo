@@ -9,7 +9,6 @@ import Model
  */
 public enum TodoDetailViewBuilder {
     @MainActor
-    @ViewBuilder
     public static func build(todo: Todo) -> some View {
         TodoDetailView(todo: todo)
     }

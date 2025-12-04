@@ -14,6 +14,7 @@ import Model
 
 // 外部モジュールからアクセスできるようにpublicにする
 public struct AppRootView: View {
+
     // 外部モジュールからインスタンスを生成できるようにpublicにする
     public init() { }
 

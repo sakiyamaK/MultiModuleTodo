@@ -10,11 +10,11 @@ import Model
 import SwiftUI
 
 public extension EnvironmentValues {
-    @Entry var router: AppRouter!
+    @Entry var router: AppRouterProtocol!
 }
 
 @MainActor
-public protocol AppRouter {
+public protocol AppRouterProtocol {
     func toDetail(todo: Todo) -> AnyView
     func toList() -> AnyView
 }

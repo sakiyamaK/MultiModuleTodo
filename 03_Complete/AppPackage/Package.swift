@@ -9,7 +9,7 @@ let package = Package(
         .iOS(.v17)
     ],
     products: [
-        .library(name: "AppRootFeature", targets: ["AppRoot"]),
+        .library(name: "AppRoot", targets: ["AppRoot"]),
         .library(name: "TodoList", targets: ["TodoList"]),
         .library(name: "TodoDetail", targets: ["TodoDetail"]),
     ],

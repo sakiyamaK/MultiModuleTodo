@@ -7,7 +7,7 @@ import AppRouterInterface
 import Network
 
 @MainActor
-public final class AppRouterImpl: AppRouter {
+public final class AppRouterImpl: AppRouterProtocol {
 
     public static let shared = AppRouterImpl()
 
