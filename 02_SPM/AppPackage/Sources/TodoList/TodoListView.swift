@@ -7,11 +7,14 @@ import Network
 
 // 外部モジュールからアクセスできるようにpublicにする
 public struct TodoListView: View {
+
     private let client: TodoClient
+
     // 外部モジュールからインスタンスを生成できるようにpublicにする
     public init(client: TodoClient) {
         self.client = client
     }
+
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \Todo.createdAt, order: .reverse) private var todos: [Todo]
     @State private var hasLoaded = false
